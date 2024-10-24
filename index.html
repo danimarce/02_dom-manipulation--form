@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="./css/sanitize.css" />
+        <link rel="stylesheet" href="./css/globals.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
         <script src="./js/index.js" defer></script>
     </head>
     <body>
@@ -14,11 +17,18 @@
                 <form class="section__form" action="">
                     <label class="form__label" for="title">
                         Title
-                        <input type="text" required name="title" id="title" />
+                        <input
+                            class="form__input"
+                            type="text"
+                            required
+                            name="title"
+                            id="title"
+                        />
                     </label>
                     <label class="form__label" for="content">
                         Content
                         <input
+                            class="form__input"
                             type="text"
                             required
                             name="content"
@@ -27,7 +37,11 @@
                     </label>
                     <label class="form__label" for="priority">
                         Priority
-                        <select name="priority" id="priority">
+                        <select
+                            class="form__select"
+                            name="priority"
+                            id="priority"
+                        >
                             <option value="0" disabled selected>
                                 Select priority
                             </option>
@@ -46,11 +60,13 @@
             <section class="main__section">
                 <h2 class="section__title">Notes List</h2>
                 <ul class="section__list">
-                    <li class="list__item">
-                        <h3 class="item__title">Note title</h3>
-                        <p class="item__content">This is a note content</p>
-                        <p class="item__priority">Priority</p>
-                    </li>
+                    <div class="listItem__wrapped">
+                        <li class="list__item">
+                            <h3 class="item__title">Note title</h3>
+                            <p class="item__content">This is a note content</p>
+                            <p class="item__priority">Priority</p>
+                        </li>
+                    </div>
                 </ul>
             </section>
         </main>
