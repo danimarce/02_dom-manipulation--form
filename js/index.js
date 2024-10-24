@@ -11,9 +11,12 @@ $form.addEventListener('submit', (event) => {
         priorityValue = "No priority";
     }
 
-    console.log({ title: titleValue, content: contentValue, priority: priorityValue });
+    // console.log({ title: titleValue, content: contentValue, priority: priorityValue });
 
     const $unorderedList = window.document.querySelector('.section__list');
+
+    const $listItemWrapped = window.document.createElement('div');
+    $listItemWrapped.classList.add('listItem__wrapped');
     
     const $listItem = window.document.createElement('li');
     $listItem.classList.add('list__item');
@@ -37,7 +40,10 @@ $form.addEventListener('submit', (event) => {
     $listItem.appendChild($contentParagraphItem);
     $listItem.appendChild($priorityParagraphItem);
 
-    $unorderedList.appendChild($listItem);
+    $listItemWrapped.appendChild($listItem)
+    
+
+    $unorderedList.appendChild($listItemWrapped);
 
     const $inputTitle = window.document.querySelector('#title');
     const $inputContent = window.document.querySelector('#content');
