@@ -8,9 +8,6 @@ const createNote = (event) => {
     }
 
     const $unorderedList = window.document.querySelector('.section__list');
-
-    const $listItemWrapped = window.document.createElement('div');
-    $listItemWrapped.classList.add('listItem__wrapped');
     
     const $listItem = window.document.createElement('li');
     $listItem.classList.add('list__item');
@@ -32,11 +29,9 @@ const createNote = (event) => {
 
     $listItem.appendChild($headingItem);
     $listItem.appendChild($contentParagraphItem);
-    $listItem.appendChild($priorityParagraphItem);
+    $listItem.appendChild($priorityParagraphItem);  
 
-    $listItemWrapped.appendChild($listItem)    
-
-    $unorderedList.appendChild($listItemWrapped);
+    $unorderedList.appendChild($listItem);
 
     const $inputTitle = window.document.querySelector('#title');
     const $inputContent = window.document.querySelector('#content');
