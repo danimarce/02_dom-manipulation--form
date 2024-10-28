@@ -68,16 +68,13 @@ body {
     list-style: none;
 }
 
-.listItem__wrapped {
+.list__item {
+    color: #000;
     background-color: #fff;
     padding: var(--spacing-md);
     margin-bottom: var(--spacing-md);
     border-radius: var(--radius-xs);
     border: 0.5px solid #bebdbd;
-}
-
-.list__item {
-    color: #000;
 }
 
 .item__title {
