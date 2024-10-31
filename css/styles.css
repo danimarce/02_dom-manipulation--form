@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-l);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+    font-family: sans-serif;
+    width: 100vw;
+}
+
+.header__title {
+    width: 100%;
+    text-align: center;
+}
+
+.main__section {
+    margin: var(--spacing-l) 0;
+}
+
+.section__title {
+    border-bottom: 1px solid white;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+}
+
+.section__form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: end;
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-xs);
+    border: 0.5px solid #bebdbd;
+}
+
+.form__label {
+    color: #000;
+    font-weight: 700;
+    width: 90%;
+}
+
+.form__input,
+.form__select {
+    width: 75%;
+    padding: var(--spacing-xs);
+    margin: var(--spacing-sm) 0;
+    margin-left: var(--spacing-xs);
+    border-radius: var(--radius-xs);
+    border-color: var(--color-input-border-dark);
+    border-width: 1px;
+    background-color: #f2f1f1;
+}
+
+.form__button {
+    width: 92%;
+    background-color: var(--color-button-bg-dark);
+    color: var(--color-button-text-dark);
+    border-radius: var(--radius-xs);
+    padding: var(--spacing-xs) 0;
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    border-color: var(--color-input-border-dark);
+    border-width: 1px;
+}
+
+.section__list {
+    list-style: none;
+}
+
+.list__item {
+    color: #000;
+    background-color: #fff;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--radius-xs);
+    border: 0.5px solid #bebdbd;
+}
+
+.item__title {
+    border-left: 5px solid #047cfc;
+    padding-left: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+}
+
+.item__priority,
+.item__content {
+    padding-left: var(--spacing-md);
+}
+
+.item__content {
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+}
+
+.item__priority {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        color: var(--color-text-light);
+        background-color: var(--color-bg-light);
+    }
+
+    .section__title {
+        border-bottom: 1px solid #a0a0a0;
+    }
+}
